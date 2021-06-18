@@ -1,0 +1,15 @@
+IT_LOGGER
+
+store and get our data:
+	- 'json server' fake REST API not in production
+	- 'materialize' for the UI design and javascript widgets
+	- install react, json server (as Dev dependency -D) and concurrently
+	- with json-server I don't have to add an id because it will autoincrement
+	- materialize is a CSS framework
+	- similar to Bootstrap, Foundation, Bulma
+	- we will be using buttons and models
+	- the materialize-ui with react is a bit much code
+	- materila icons are used as fontawesome
+	- npm install materialize-css
+	- to use modal we have to initialize it
+	- 
