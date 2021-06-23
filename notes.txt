@@ -12,4 +12,8 @@ store and get our data:
 	- materila icons are used as fontawesome
 	- npm install materialize-css
 	- to use modal we have to initialize it
-	- 
+
+11/6
+	- racfp (component with prototype)
+	- we use moment to display date
+	- npm install moment react-moment
