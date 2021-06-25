@@ -17,3 +17,8 @@ store and get our data:
 	- racfp (component with prototype)
 	- we use moment to display date
 	- npm install moment react-moment
+
+11/7
+	- add button
+	- regarding the modals the modal that references to another modal, there should be the id match the referring modal 'href' attribute
+	- with materialize we can create error messages as 'toast'
