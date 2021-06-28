@@ -22,3 +22,7 @@ store and get our data:
 	- add button
 	- regarding the modals the modal that references to another modal, there should be the id match the referring modal 'href' attribute
 	- with materialize we can create error messages as 'toast'
+
+11/8
+	- at the Add...Modal.js, in the return () the id='tech-modal' should be exactly as at the 'layout' AddBtn.js '#href' attribute
+	- if an <a></a> tag doesn't go nowhere we can use the '#!' characters
