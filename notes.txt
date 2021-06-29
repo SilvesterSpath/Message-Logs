@@ -47,3 +47,8 @@ store and get our data:
 	- in 'mapStateToProps' the state.log is the logReducer
 	- if I bring in the app level state I dont need the component level state
 	- if I bring in an action with the connect() syntax it will be a props, so it will called props.getLogs, but after we destructure it it will be getLogs again
+
+12/4
+	- in the AddLogModal.js we run the action
+	- we are not bringin in any state in AddLogModal.js so 'mapStateToProps' is null
+	- 

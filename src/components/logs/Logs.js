@@ -8,7 +8,7 @@ import { getLogs } from '../../actions/logActions';
 const Logs = ({ log: { logs, loading }, getLogs }) => {
   useEffect(() => {
     getLogs();
-    // seling-desable-next-line
+    // eslint-disable-next-line
   }, []);
 
   /*   const getLogs = async () => {
@@ -41,6 +41,7 @@ const Logs = ({ log: { logs, loading }, getLogs }) => {
 
 Logs.protoTypes = {
   log: PropTypes.object.isRequired,
+  getLogs: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state) => ({
