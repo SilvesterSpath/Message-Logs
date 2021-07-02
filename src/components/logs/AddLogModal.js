@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import M from 'materialize-css/dist/js/materialize.min.js';
+import bcrypt from 'bcryptjs';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { addLog } from '../../actions/logActions';
@@ -8,15 +9,20 @@ const AddLogModal = ({ addLog }) => {
   const [message, setMessage] = useState([]);
   const [attention, setAttention] = useState(false);
   const [tech, setTech] = useState('');
+  const [views, setViews] = useState(0);
 
-  const onSubmit = () => {
-    if (message === '' || tech === '') {
+  const onSubmit = async () => {
+    if (message === '' || views === '' || tech === '') {
       M.toast({ html: 'Please enter a message and person' });
     } else {
+      const salt = await bcrypt.genSalt(5);
+      const secretMessage = await bcrypt.hash(message, salt);
       const newLog = {
         message,
+        hashedMessage: secretMessage,
         attention,
         tech,
+        views,
         date: new Date(),
       };
 
@@ -60,6 +66,23 @@ const AddLogModal = ({ addLog }) => {
               <option value='John Doe'>John Doe</option>
               <option value='Sam Smith'>Sam Smith</option>
               <option value='Sara Wilson'>Sara Wilson</option>
+            </select>
+          </div>
+        </div>
+        <div className='row'>
+          <div className='input-field'>
+            <select
+              name='views'
+              value={views}
+              type='number'
+              className='browser-default'
+              onChange={(e) => setViews(e.target.value)}
+            >
+              <option value=''>Select Number of Views</option>
+
+              <option value='1'>1</option>
+              <option value='2'>2</option>
+              <option value='3'>3</option>
             </select>
           </div>
         </div>

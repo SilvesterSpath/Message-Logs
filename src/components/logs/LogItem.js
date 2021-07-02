@@ -21,13 +21,15 @@ const LogItem = ({ log, deleteLog }) => {
             log.attention ? 'red-text' : 'blue-text'
           }`}
         >
-          {log.message}
+          {log.views === 0 ? 'Message no more available!' : log.message}
         </a>
         <br />
         <span className='grey-text'>
           <span className='black-text'>ID #{log.id} </span>
           last updated by:
           <span className='black-text'> {log.tech} </span>
+          Number of views left:
+          <span className='black-text'> {log.views} </span>
           on <Moment format='MMMM Do YYYY, h:mm:ss a'>{log.date}</Moment>
         </span>
         <a href='#!' className='secondary-content' onClick={onDelete}>
