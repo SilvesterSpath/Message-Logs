@@ -51,4 +51,8 @@ store and get our data:
 12/4
 	- in the AddLogModal.js we run the action
 	- we are not bringin in any state in AddLogModal.js so 'mapStateToProps' is null
-	- 
+	
+12/5
+	- making the delete message functionality
+	- workflow: create the action, deal with it in the reducer and then add it to the component
+	- in the component because we interacting with redux we have to bring in 'connect'
