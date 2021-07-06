@@ -8,11 +8,11 @@
       "id": 1
     },
     {
-      "message": "Hard drive failed workStation 002",
+      "id": 2,
+      "message": "Hard drive failed workStation 002 ",
       "attention": true,
       "tech": "Sam Smith",
-      "date": "2021-06-29T07:07:19.230Z",
-      "id": 2
+      "date": "2021-07-06T07:22:09.581Z"
     },
     {
       "message": "Secrete Message",
@@ -36,31 +36,6 @@
       "views": "2",
       "date": "2021-07-02T04:44:47.649Z",
       "id": 5
-    },
-    {
-      "message": "sdfdf",
-      "hashedMessage": "$2a$05$faFjOMXAacom28/VQ0UIpOO0wRYNs1ggmpPhLxbHWcBIgClzGGFFC",
-      "attention": false,
-      "views": "1",
-      "date": "2021-07-02T04:45:31.803Z",
-      "id": 6
-    },
-    {
-      "message": "sfdsfd",
-      "hashedMessage": "$2a$05$npsgFamfW0NimL8.m9oRf.r4yvjxtFnY2GsXvj6tr0RlsfuRbzYS6",
-      "attention": false,
-      "views": 0,
-      "date": "2021-07-02T05:01:11.030Z",
-      "id": 7
-    },
-    {
-      "message": "sdfdsf",
-      "hashedMessage": "$2a$05$3PI4piXNiI.HH2Wt95vRH.0Ocne9.PcTAuI0Xj55/ELo64LxoxFi2",
-      "attention": false,
-      "tech": "Sam Smith",
-      "views": "2",
-      "date": "2021-07-02T05:15:48.540Z",
-      "id": 8
     }
   ],
   "techs": [
