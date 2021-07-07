@@ -125,7 +125,11 @@ export const setCurrent = (log) => {
   };
 };
 
+<<<<<<< HEAD
 // Clear Current log
+=======
+// Clear current log action
+>>>>>>> fde7a20a12037fadbd19eb84148e0e4ae55ad88a
 export const clearCurrent = () => {
   return {
     type: CLEAR_CURRENT,
