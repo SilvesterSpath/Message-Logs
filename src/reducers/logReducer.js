@@ -1,9 +1,12 @@
 import {
   ADD_LOG,
+  CLEAR_CURRENT,
   DELETE_LOG,
   GET_LOGS,
   LOGS_ERROR,
+  SET_CURRENT,
   SET_LOADING,
+  UPDATE_LOG,
 } from '../actions/types';
 
 const initialState = {
@@ -34,6 +37,26 @@ const logReducer = (state = initialState, action) => {
         ...state,
         logs: state.logs.filter((i) => i.id !== action.payload),
         loading: false,
+      };
+
+    case UPDATE_LOG:
+      return {
+        ...state,
+        logs: state.logs.map((i) =>
+          i.id === action.payload.id ? action.payload : i
+        ),
+      };
+
+    case SET_CURRENT:
+      return {
+        ...state,
+        current: action.payload,
+      };
+
+    case CLEAR_CURRENT:
+      return {
+        ...state,
+        current: null,
       };
 
     case SET_LOADING:

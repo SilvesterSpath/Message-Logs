@@ -56,3 +56,13 @@ store and get our data:
 	- making the delete message functionality
 	- workflow: create the action, deal with it in the reducer and then add it to the component
 	- in the component because we interacting with redux we have to bring in 'connect'
+
+12/6
+	- Setting the current log into the form field upon click
+	- this is stricktly a frontend operation
+	- after we bring in 'up at the top' an action we should add as a prop in the function in order to use it
+	- if in the onClick={()=>{}} I have a callback that means I run it directly
+	- when need to bring in the current value and 'mapStateToProps', because we want to fill the form with the current data
+
+12/6 again	
+	- git reset --hard c14809fa (roll back the code to the added point)
