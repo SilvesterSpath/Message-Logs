@@ -89,4 +89,6 @@ store and get our data:
 	- getting the techs in the form at the 'select techlist'
 	- creating a new component for the techs
 	- we need to call getTechs so bring in useEffect
-	- 
+
+13/3
+	- in addTechModal.js we not pulling anything from state so mapStateToProps is null

@@ -10,10 +10,9 @@ const AddLogModal = ({ addLog }) => {
   const [message, setMessage] = useState([]);
   const [attention, setAttention] = useState(false);
   const [tech, setTech] = useState('');
-  const [views, setViews] = useState(0);
 
   const onSubmit = async () => {
-    if (message === '' || views === '' || tech === '') {
+    if (message === '' || tech === '') {
       M.toast({ html: 'Please enter a message and person' });
     } else {
       const salt = await bcrypt.genSalt(5);
@@ -23,7 +22,6 @@ const AddLogModal = ({ addLog }) => {
         hashedMessage: secretMessage,
         attention,
         tech,
-        views,
         date: new Date(),
       };
 
@@ -68,23 +66,7 @@ const AddLogModal = ({ addLog }) => {
             </select>
           </div>
         </div>
-        <div className='row'>
-          <div className='input-field'>
-            <select
-              name='views'
-              value={views}
-              type='number'
-              className='browser-default'
-              onChange={(e) => setViews(e.target.value)}
-            >
-              <option value=''>Select Number of Views</option>
 
-              <option value='1'>1</option>
-              <option value='2'>2</option>
-              <option value='3'>3</option>
-            </select>
-          </div>
-        </div>
         <div className='row'>
           <div className='input-field'>
             <p>
