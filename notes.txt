@@ -80,4 +80,8 @@ store and get our data:
 	- wenn we connect the 'redux' and not get anything from the state, then the first paramater is 'null'
 	- 'useRef' hook used for to get the value from the form
 	- we didn't have a submit button we want to search as we type
+
+13/1
+	- Technicans part
+	- after I created the actions and the reducer, in the TechListModal.js I don't need the component level state and function because I use app level state with the reducer
 	- 

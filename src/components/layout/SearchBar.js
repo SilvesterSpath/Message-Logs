@@ -19,7 +19,7 @@ const SearchBar = ({ searchLogs }) => {
               <input
                 id='search'
                 type='search'
-                placeholder='Search Logs...'
+                placeholder='Search Messages...'
                 ref={text}
                 onChange={onChange}
               />
