@@ -7,6 +7,7 @@ import {
   SET_CURRENT,
   CLEAR_CURRENT,
   UPDATE_LOG,
+  SEARCH_LOGS,
 } from './types';
 
 /* export const getLogs = () => {
@@ -117,6 +118,26 @@ export const updateLog = (log) => async (dispatch) => {
   }
 };
 
+// Search logs
+export const searchLogs = (text) => async (dispatch) => {
+  try {
+    setLoading();
+
+    const res = await fetch(`/logs?q=${text}`);
+    const data = await res.json();
+
+    dispatch({
+      type: SEARCH_LOGS,
+      payload: data,
+    });
+  } catch (error) {
+    dispatch({
+      type: LOGS_ERROR,
+      payload: error.response.data,
+    });
+  }
+};
+
 // Set Current log
 export const setCurrent = (log) => {
   return {
@@ -125,11 +146,7 @@ export const setCurrent = (log) => {
   };
 };
 
-<<<<<<< HEAD
 // Clear Current log
-=======
-// Clear current log action
->>>>>>> fde7a20a12037fadbd19eb84148e0e4ae55ad88a
 export const clearCurrent = () => {
   return {
     type: CLEAR_CURRENT,

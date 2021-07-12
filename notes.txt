@@ -70,3 +70,14 @@ store and get our data:
 =======
 	- 
 >>>>>>> fde7a20a12037fadbd19eb84148e0e4ae55ad88a
+
+12/7 
+	- search logs
+	- with json-server a search functionality is just making a request to '/logs' and adding a q parameter wich is just a query
+!!!	-  The difference between the contact-keeper search and this search is that there we filter contacts that were already in our state, that were pulled in from the server
+	here we actually hitting a separate end-point that will give us what we are searching for 
+	 so it is different than just filtering through what we are already have
+	- wenn we connect the 'redux' and not get anything from the state, then the first paramater is 'null'
+	- 'useRef' hook used for to get the value from the form
+	- we didn't have a submit button we want to search as we type
+	- 

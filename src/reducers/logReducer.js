@@ -4,6 +4,7 @@ import {
   DELETE_LOG,
   GET_LOGS,
   LOGS_ERROR,
+  SEARCH_LOGS,
   SET_CURRENT,
   SET_LOADING,
   UPDATE_LOG,
@@ -45,6 +46,13 @@ const logReducer = (state = initialState, action) => {
         logs: state.logs.map((i) =>
           i.id === action.payload.id ? action.payload : i
         ),
+      };
+
+    case SEARCH_LOGS:
+      return {
+        ...state,
+        logs: action.payload,
+        loading: false,
       };
 
     case SET_CURRENT:

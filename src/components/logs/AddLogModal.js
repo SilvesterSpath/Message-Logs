@@ -121,7 +121,7 @@ const modalStyle = {
   height: '75%',
 };
 
-AddLogModal.protoTypes = {
+AddLogModal.propTypes = {
   addLog: PropTypes.func.isRequired,
 };
 
