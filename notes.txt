@@ -84,4 +84,9 @@ store and get our data:
 13/1
 	- Technicans part
 	- after I created the actions and the reducer, in the TechListModal.js I don't need the component level state and function because I use app level state with the reducer
+
+13/2
+	- getting the techs in the form at the 'select techlist'
+	- creating a new component for the techs
+	- we need to call getTechs so bring in useEffect
 	- 
