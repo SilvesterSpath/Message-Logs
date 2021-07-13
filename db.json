@@ -73,11 +73,6 @@
       "lastName": "Spáth"
     },
     {
-      "firstName": "sdfsdf",
-      "lastName": "sdfsdfdsf",
-      "id": 6
-    },
-    {
       "firstName": "Greg",
       "lastName": "Harris",
       "id": 7
@@ -86,21 +81,6 @@
       "firstName": "new ",
       "lastName": "person",
       "id": 8
-    },
-    {
-      "firstName": "fsdf",
-      "lastName": "sdfdf",
-      "id": 9
-    },
-    {
-      "firstName": "new ",
-      "lastName": "technican",
-      "id": 10
-    },
-    {
-      "firstName": "JIll ",
-      "lastName": "Smioth",
-      "id": 11
     }
   ]
 }
