@@ -92,3 +92,6 @@ store and get our data:
 
 13/3
 	- in addTechModal.js we not pulling anything from state so mapStateToProps is null
+
+13/4
+	- delete a technician

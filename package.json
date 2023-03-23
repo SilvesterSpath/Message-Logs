@@ -19,8 +19,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "json-server": "json-server --watch db.json --port 5000",
+    "start": "set PORT=4000 && react-scripts start",
+    "json-server": "json-server --watch db.json --port 5001",
     "dev": "concurrently \"npm start\" \"npm run json-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -49,5 +49,5 @@
     "concurrently": "^6.2.0",
     "json-server": "^0.16.3"
   },
-  "proxy": "http://localhost:5000"
+  "proxy": "http://localhost:5001"
 }

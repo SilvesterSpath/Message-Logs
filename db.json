@@ -29,21 +29,12 @@
       "date": "2021-07-07T04:58:12.404Z"
     },
     {
-      "message": "sdfsdfdf",
-      "hashedMessage": "$2a$05$NoyudmMCYuwMxH6.ZqDqWeCBLZwJOaMQUQU73AWcjt1dYrBQiCLIa",
+      "message": "newest message",
+      "hashedMessage": "$2a$05$kfrDWwEtImAerXLyqWpBEeQ3zDd.LZu4E5f6uJCiDl96IeXeq06KK",
       "attention": false,
-      "tech": "John Doe",
-      "views": 0,
-      "date": "2021-07-12T07:02:49.059Z",
+      "tech": "Sam Smith",
+      "date": "2023-03-23T11:24:11.262Z",
       "id": 5
-    },
-    {
-      "message": "Message",
-      "hashedMessage": "$2a$05$Rrzhl8um94LBKfmypDDm9uWokFnmPikoGhGy7bEqm0KIacZkTzbha",
-      "attention": false,
-      "tech": "Greg Harris",
-      "date": "2021-07-12T07:05:11.605Z",
-      "id": 6
     }
   ],
   "techs": [
